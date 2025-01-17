@@ -54,7 +54,7 @@ ls: Lists files and directories in the current location.
 
 - Black: Normal files
 
-Common Options:
+### Common Options:
 
 ls -l: Detailed list.
 
@@ -72,23 +72,23 @@ ls -latR /data: Combination of options.
 
 touch filename: Creates an empty file or updates its timestamp.
 
-File Permissions:
+### File Permissions:
 
-Read: 4
+- Read: 4
 
-Write: 2
+- Write: 2
 
-Execute: 1
+- Execute: 1
 
-Example: 6 6 4 means:
+### Example: 6 6 4 means:
 
-Owner: Read & Write
+- Owner: Read & Write
 
-Group: Read & Write
+- Group: Read & Write
 
-Others: Read
+- Others: Read
 
-Example:
+### Example:
 
 chmod 777 testfile: Grants rwx to all entities (owner, group, others).
 
@@ -118,17 +118,17 @@ mv file dir: Move file to a directory.
 
 ## 9. Edit Files (vi)
 
-Steps to Edit a File:
+### Steps to Edit a File:
 
-vi filename: Open file in editor.
+- vi filename: Open file in editor.
 
-Press i: Enter insert mode.
+- Press i: Enter insert mode.
 
-Write content.
+- Write content.
 
-Press Esc: Exit insert mode.
+- Press Esc: Exit insert mode.
 
-Type :wq: Save and quit.
+- Type :wq: Save and quit.
 
 ## 10. Read Content from Files (cat)
 
@@ -138,11 +138,11 @@ cat > file: Create a file and add content.
 
 cat >> file: Append content to a file.
 
-Merge Files:
+### Merge Files:
 
 cat file1 file2 >> mergedfile: Merge content of file1 and file2 into mergedfile.
 
-Disk Usage:
+### Disk Usage:
 
 du -h /data: Display disk usage in human-readable format.
 
@@ -160,7 +160,7 @@ grep pattern filename: Search for a pattern in a file.
 
 hadoop fs -ls: List files in HDFS.
 
-Examples:
+### Examples:
 
 hadoop fs -ls /: List root directory.
 
@@ -170,13 +170,13 @@ hadoop fs -ls -S -h /: List files by size in human-readable format.
 
 ## 2. Create and Remove Directories
 
-Create:
+### Create a directory:
 
 hadoop fs -mkdir /user/username/dir: Create a directory.
 
 hadoop fs -mkdir -p /user/username/dir1/dir2: Create nested directories.
 
-Remove:
+### Remove a Directory:
 
 hadoop fs -rmdir dir: Remove an empty directory.
 
@@ -184,31 +184,31 @@ hadoop fs -rm -R dir: Remove a directory and its contents recursively.
 
 ## 3. File Transfers
 
-Local to HDFS:
+### Local to HDFS:
 
 hadoop fs -put localfile hdfsdir/: Upload file to HDFS.
 
 hadoop fs -copyFromLocal localfile hdfsdir/
 
-HDFS to Local:
+### HDFS to Local:
 
 hadoop fs -get hdfsfile localdir/
 
 hadoop fs -copyToLocal hdfsfile localdir/
 
-HDFS to HDFS:
+### HDFS to HDFS:
 
 hadoop fs -cp source destination
 
 ## 4. View and Check Files
 
-View Content:
+### View Content:
 
 hadoop fs -cat file: Display file content.
 
 hadoop fs -tail file: Display last few lines of a file.
 
-File System Check:
+### File System Check:
 
 hdfs fsck file -files -blocks -locations: Perform a file system check.
 

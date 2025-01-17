@@ -6,7 +6,7 @@ Linux Commands
 
 ## 1. Present Working Directory (pwd)
 
-pwd: Displays the current directory.
+> pwd: Displays the current directory.
 
 ## 2. User Information (whoami)
 

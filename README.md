@@ -6,19 +6,17 @@ Linux Commands
 
 ## 1. Present Working Directory (pwd)
 
-> pwd: Displays the current directory.
+pwd: Displays the current directory.
 
 ## 2. User Information (whoami)
 
 whoami: Displays the username of the current user.
 
-Linux Directory Structure
-
-Linux follows a tree-like structure.
+Linux Directory Structure: Linux follows a tree-like structure.
 
 /: Topmost directory, parent of all directories.
 
-Terminology:
+### Terminology:
 
 Directory (Linux) = Folder (Windows)
 
@@ -34,7 +32,7 @@ cd ../.. : Move up two levels in the directory tree.
 
 cd . : Stay in the current directory.
 
-Path Types
+### Path Types
 
 Absolute Path: Starts from the root /.
 
@@ -42,19 +40,19 @@ Example: cd /data
 
 Relative Path: Relative to the current location.
 
-Example: cd ../departments/
+### Example: cd ../departments/
 
 ## 4. List Files and Directories (ls)
 
 ls: Lists files and directories in the current location.
 
-Color Coding:
+### Color Coding:
 
-Blue: Directories
+- Blue: Directories
 
-Green: Executables
+- Green: Executables
 
-Black: Normal files
+- Black: Normal files
 
 Common Options:
 

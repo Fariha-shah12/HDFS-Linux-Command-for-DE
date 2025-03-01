@@ -128,7 +128,7 @@ mv file dir: Move file to a directory.
 
 - Press Esc: Exit insert mode.
 
-- Type :wq: Save and quit.
+- Type :wq file will Save and quit.
 
 ## 10. Read Content from Files (cat)
 
